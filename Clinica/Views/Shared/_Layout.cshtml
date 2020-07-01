@@ -101,7 +101,7 @@
                 </a>
                 <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Acciones de Pacientes:</h6>
+                        <h6 class="collapse-header">Acciones de Odontologos</h6>
                         <a class="collapse-item" href="@Url.Action("Index","Odontologos")">Listar</a>
                         <a class="collapse-item" href="@Url.Action("Create","Odontologos")">Crear</a>
                     </div>
@@ -116,7 +116,7 @@
                 </a>
                 <div id="collapseUtilities1" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Acciones de Tratamientos</h6>
+                        <h6 class="collapse-header">Acciones de Citas</h6>
                         <a class="collapse-item" href="@Url.Action("Index","Citas")">Listar</a>
                         <a class="collapse-item" href="@Url.Action("Create","Citas")">Crear</a>
 
@@ -124,15 +124,29 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapseUtilities1">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2" aria-expanded="true" aria-controls="collapseUtilities2">
                     <i class="fas fa-fw fa-tooth"></i>
                     <span>Boletas</span>
                 </a>
-                <div id="collapseUtilities1" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div id="collapseUtilities2" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Acciones de Boletas</h6>
                         <a class="collapse-item" href="@Url.Action("Index","Boletas")">Listar</a>
                         <a class="collapse-item" href="@Url.Action("Create","Boletas")">Crear</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities3" aria-expanded="true" aria-controls="collapseUtilities3">
+                    <i class="fas fa-fw fa-tooth"></i>
+                    <span>Remuneraciones</span>
+                </a>
+                <div id="collapseUtilities3" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Acciones de Remuneraciones</h6>
+                        <a class="collapse-item" href="@Url.Action("Index","Remuneraciones")">Listar</a>
+                        <a class="collapse-item" href="@Url.Action("Create","Remuneraciones")">Crear</a>
 
                     </div>
                 </div>
@@ -170,13 +184,14 @@
                 </a>
             </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="~/Content/tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tablas</span>
-                </a>
-            </li>
+            <!-- Nav Item - Tables  
+                   <li class="nav-item">
+                   <a class="nav-link" href="~/Content/tables.html">
+                   <i class="fas fa-fw fa-table"></i>
+                   <span>Tablas</span>
+                   </a>
+                    </li>-->
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
