@@ -120,8 +120,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BoletasController.cs" />
     <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\OdontologosController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\TratamientosController.cs" />
@@ -135,6 +137,7 @@
     <Content Include="Content\contact.jpg" />
     <Content Include="Content\css\sb-admin-2.css" />
     <Content Include="Content\css\sb-admin-2.min.css" />
+    <Content Include="Content\img\admin.jpg" />
     <Content Include="Content\img\undraw_posting_photo.svg" />
     <Content Include="Content\js\demo\chart-area-demo.js" />
     <Content Include="Content\js\demo\chart-bar-demo.js" />
@@ -2016,6 +2019,14 @@
     <Content Include="Views\Odontologos\Edit.cshtml" />
     <Content Include="Views\Odontologos\Index.cshtml" />
     <Content Include="Views\Odontologos\View.cshtml" />
+    <Content Include="Views\Citas\Create.cshtml" />
+    <Content Include="Views\Citas\Edit.cshtml" />
+    <Content Include="Views\Citas\Index.cshtml" />
+    <Content Include="Views\Citas\View.cshtml" />
+    <Content Include="Views\Boletas\Create.cshtml" />
+    <Content Include="Views\Boletas\Edit.cshtml" />
+    <Content Include="Views\Boletas\Index.cshtml" />
+    <Content Include="Views\Boletas\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
