@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Clinica.Models.TratamientoEditar
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,61 +24,98 @@
 
 <body class="bg-gradient-primary">
 
-    <div class="container">
+    <center>
 
-        <div class="">
-            <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block "></div>
-                    <div class="col-lg-9">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Editar Tratamiento!</h1>
+        <div class="container">
+
+            <div class="">
+                <div class="">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-5 d-none "></div>
+                        <div class="col-lg-10">
+                            <div class="p-5">
+                                <div class="text-center">
+
+                                    <div class="card-body">
+
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+
+                                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"
+
+
+                                    <h1 class="h4 text-gray-900 mb-4">Editar Tratamiento!</h1>
+                                                 <hr />
+
+                                            </div>
+
+
+
+                                            <form form method="POST" action="" @Url.Action("Edit", "Tratamientos") " class="user">
+
+
+
+
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control form-control-user" name="Nombres" value="@Model.Nombres" placeholder="Endodoncia">
+                                                        @Html.ValidationMessageFor(Model => Model.Nombres)
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control form-control-user" name="Valor" value="@Model.Valor" placeholder="80.000">
+                                                        @Html.ValidationMessageFor(Model => Model.Valor)
+                                                    </div>
+                                                </div>
+                                                <hr />
+                                                <div class="form-group">
+                                                    <center>
+                                                        <label for="sel1">Seleccione Especialista :</label>
+                                                    </center>
+                                                    <select class="form-control" name="Especialistas" value="@Model.Especialistas" placeholder="Selecciona">
+                                                        <option>Claudio Quezada</option>
+                                                        <option>Danny Gutierrez</option>
+                                                        <option>Fabian Zenteno</option>
+                                                        <option>Otro</option>
+                                                    </select>
+
+                                                    @Html.ValidationMessageFor(Model => Model.Especialistas)
+                                                    <hr />
+                                                    <div class="form-group row">
+
+
+                                                    </div>
+                                                    <center>
+                                                        <button type="submit" class="btn btn-primary">Grabar</button>
+                                                    </center>
+                                                    </a>
+
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <form class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName" value="Endodoncia" >
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName" value="80.000">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" value="Juan Perez">
-                                </div>
-
-                                <div class="form-group row">
-
-
-                                </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Editar
-                                </a>
-                                <hr>
-
-                            </form>
-
                         </div>
+
                     </div>
                 </div>
+                </table>
             </div>
         </div>
 
-    </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+    </center>
 </body>
 
 </html>
