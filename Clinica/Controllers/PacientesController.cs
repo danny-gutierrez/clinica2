@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Clinica.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,17 +14,45 @@ namespace Clinica.Controllers
         {
             return View();
         }
+
+        [HttpGet]
         public ActionResult Create()
         {
-            return View();
+            Paciente paciente = new Paciente();
+            return View(paciente);
         }
+
+        [HttpPost]
+        public ActionResult Create(Paciente paciente)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("View", "Pacientes", new { id = 1 });
+            }
+            return View(paciente);
+        }
+
         public ActionResult View(int id)
         {
             return View();
         }
+       
+
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            Paciente paciente = new Paciente();
+            return View(paciente);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Paciente paciente)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Edit", "Pacientes", new { id = 1 });
+            }
+            return View(paciente);
         }
     }
 }
