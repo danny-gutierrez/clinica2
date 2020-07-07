@@ -1,7 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@model Clinica.Models.Cita
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,71 +22,107 @@
 
 </head>
 
+
+
 <body class="bg-gradient-primary">
+    <center>
 
-    <div class="container">
 
-        <div class="">
-            <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block "></div>
-                    <div class="col-lg-9">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Editar Cita!</h1>
+        <div class="container">
+
+            <div class="">
+                <div class="">
+                    <!-- Nested Row within Card Body -->
+
+
+                    <div class="row">
+                        <div class="col-lg-5 d-none  bg-light"> </div>
+                        <div class="col-lg-10">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <div class="card-body">
+
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+
+                                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                    <h1 class="h4 text-gray-900 mb-4">Editar Cita</h1>
+                                                    <hr />
+                                            </div>
+                                            <form method="POST" action="@Url.Action("Edit", "Citas")" class="user">
+
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control form-control-user" value="@Model.Nombre" name="Nombre" placeholder="danny">
+                                                        @Html.ValidationMessageFor(Model => Model.Nombre)
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control form-control-user" value="@Model.Apellido" name="Apellido" placeholder="gutierrez">
+                                                        @Html.ValidationMessageFor(Model => Model.Apellido)
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="date" class="form-control form-control-user" value="@Model.Fecha" name="Fecha" placeholder="12-12-2020">
+                                                    @Html.ValidationMessageFor(Model => Model.Fecha)
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <select class="custom-select custom-select-sm form-control form-control-sm" name="Odontologo" id="Odontologo" placeholder="Dr DANNY">
+
+                                                        <option class="form-control">Dr DANNY</option>
+                                                        <option class="form-control">Dr CLAUDIO</option>
+                                                        <option class="form-control">Dr FABIAN</option>
+
+
+                                                    </select>
+                                                    @Html.ValidationMessageFor(Model => Model.Odontologo)
+
+
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control form-control-user" value="@Model.Telefono" name="Telefono" placeholder="97700490">
+                                                    @Html.ValidationMessageFor(Model => Model.Telefono)
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-user" value="@Model.Motivo" name="Motivo" placeholder="ortodoncia">
+                                                    @Html.ValidationMessageFor(Model => Model.Motivo)
+                                                </div>
+                                                <br />
+                                                <center>
+                                                    <button type="submit" class="btn btn-primary">Grabar</button>
+                                                </center>
+                                                </a>
+
+
+                                            </form>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <form class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombre" value="Carlos">
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellido" value="Perez">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Fecha" value="18-06-2020">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Hora" value="15:00">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Odontologo" value="Briones">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Telefono" value="985244856">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail" placeholder="Motivo" value="Dolor de muela">
-                                </div>
-
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Crear
-                                </a>
-                                <hr>
-
-                            </form>
-
                         </div>
+
                     </div>
                 </div>
+                </table>
+
+
             </div>
         </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </div>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+    </center>
 </body>
 
 </html>
