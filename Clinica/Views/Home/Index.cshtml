@@ -1,12 +1,13 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿@{ ViewBag.Title = "Home Page"; }
 
-<div class="jumbotron">
-    <h1><strong>BioEsthetic-Dent</strong></h1>
-    <p class="lead">Estamos para ayudarte a Sonrreir Mejor.</p>
-    <p><a href="#" class="btn btn-primary btn-lg">Reserva tu Hora</a></p>
-</div>
+
+<center>
+    <div class="jumbotron">
+        <h1><strong>BioEsthetic-Dent</strong></h1>
+        <p class="lead">Estamos para ayudarte a Sonrreir Mejor.</p>
+        <p><a href="@Url.Action("Create","Citas")" class="btn btn-primary btn-lg">Reserva tu Hora</a></p>
+    </div>
+</center>
 <!--
 <div class="row">
     <div class="col-md-4">
