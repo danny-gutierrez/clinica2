@@ -10,5 +10,6 @@ namespace Clinica.Models
 
     {
         public DbSet<Paciente> Pacientes { get; set; }
+       
     }
 }

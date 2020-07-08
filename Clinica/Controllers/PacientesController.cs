@@ -9,10 +9,17 @@ namespace Clinica.Controllers
 {
     public class PacientesController : Controller
     {
-        // GET: Pacientes
+        private ClinicaContext _db;
+       
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            IEnumerable<Paciente> pacientes = null;
+            using (_db =new ClinicaContext())
+            {
+                pacientes = _db.Pacientes.ToList();
+            }
+            return View(pacientes);
         }
 
         [HttpGet]
@@ -34,15 +41,24 @@ namespace Clinica.Controllers
 
         public ActionResult View(int id)
         {
-            return View();
+            Paciente p = null;
+            using (_db =new ClinicaContext())
+            {
+                p = _db.Pacientes.Find(id);
+            }
+            return View(p);
         }
        
 
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            Paciente paciente = new Paciente();
-            return View(paciente);
+            Paciente p = null;
+            using (_db = new ClinicaContext())
+            {
+                p = _db.Pacientes.Find(id);
+            }
+            return View(p);
         }
 
         [HttpPost]

@@ -681,8 +681,14 @@ C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\es\System.Web.Razor.resources.
 C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\es\System.Web.WebPages.resources.dll
 C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
 C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.csproj.CoreCompileInputs.cache
 C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.csproj.CopyComplete
 C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.dll
 C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.pdb
+C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\EntityFramework.dll
+C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\EntityFramework.SqlServer.dll
+C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\EntityFramework.xml
+C:\Users\DANNY\Desktop\Clinica master\Clinica\bin\EntityFramework.SqlServer.xml
+C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.csprojAssemblyReference.cache
+C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.Migrations.InitialCreate.resources
+C:\Users\DANNY\Desktop\Clinica master\Clinica\obj\Debug\Clinica.csproj.GenerateResource.cache

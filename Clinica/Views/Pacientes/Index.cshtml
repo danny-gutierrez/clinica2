@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Clinica.Models.Paciente> 
 
 <!-- Begin Page Content -->
     <div class="container-fluid">
@@ -30,62 +30,29 @@
                             </thead>
                             <tfoot>
                                 <tr>
-                                   
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Claudio</td>
-                                    <td>Quezada</td>
-                                    <td>111111</td>
-                                    <td>34</td>
-                                    <td>Chigte</td>
-                                    <td>+56911111</td>
-                                    <td>
-                                        <a href="@Url.Action("View", "Pacientes", new { id = 1 })">Ver</a>
-                                        <a href="@Url.Action("Edit", "Pacientes", new { id = 1 })">Editar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Danny</td>
-                                    <td>gutierrez</td>
-                                    <td>222222</td>
-                                    <td>34</td>
-                                    <td>San Pedro</td>
-                                    <td>+569222222</td>
-                                    <td>
-                                        <a href="@Url.Action("View", "Pacientes", new { id = 2 })">Ver</a>
-                                        <a href="@Url.Action("Edit", "Pacientes", new { id = 2 })">Editar</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Fabian</td>
-                                    <td>Zenteno</td>
-                                    <td>333333</td>
-                                    <td>34</td>
-                                    <td>SanPedro</td>
-                                    <td>+56333333</td>
-                                    <td>
-                                        <a href="@Url.Action("View", "Pacientes", new { id = 3 })">Ver</a>
-                                        <a href="@Url.Action("Edit", "Pacientes", new { id = 3 })">Editar</a>
-                                    </td>
-                                </tr>
-                              
-                                
-                                
-                              
-                             
-                               
-                               
-                             
-                        
-                            
-                            
-                            </tbody>
-                        </table>
+                                @foreach (var p in Model)
+                                {
+                                    <tr>
+                                        <td>@p.Id</td>
+                                        <td>@p.Nombre</td>
+                                        <td>@p.Apellido</td>
+                                        <td>@p.Correo</td>
+                                        <td>@p.Direccion</td>
+                                        <td>@p.Rut</td>
+                                        <td>@p.Telefono</td>
+                                        <td>
+                                            <a href="@Url.Action("View", "Pacientes", new { id = p.Id })">Ver</a>
+                                            <a href="@Url.Action("Edit", "Pacientes", new { id = p.Id})">Editar</a>
+                                        </td>
+                                        </tr>
+
+                                 }
+                       
+                                </tbody>
+                            </table>
                     </div>
                 </div>
             </div>
