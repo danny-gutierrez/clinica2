@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\OdontologosController.cs" />
+    <Compile Include="Controllers\RemuneracionesController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\TratamientosController.cs" />
     <Compile Include="Controllers\PacientesController.cs" />
@@ -2048,6 +2049,10 @@
     <Content Include="Views\Boletas\Edit.cshtml" />
     <Content Include="Views\Boletas\Index.cshtml" />
     <Content Include="Views\Boletas\View.cshtml" />
+    <Content Include="Views\Remuneraciones\Create.cshtml" />
+    <Content Include="Views\Remuneraciones\Edit.cshtml" />
+    <Content Include="Views\Remuneraciones\Index.cshtml" />
+    <Content Include="Views\Remuneraciones\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
