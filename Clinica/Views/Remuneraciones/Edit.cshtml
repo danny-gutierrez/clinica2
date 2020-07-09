@@ -57,14 +57,14 @@
 
                                                         <input type="text" class="form-control form-control-user" placeholder="Jazmin"
                                                                name="Nombre" value="@Model.Nombre">
-                                                        @Html.ValidationMessageFor(Model => Model.Nombre)
+                                                        @Html.ValidationMessageFor(Model => Model.Nombre, null, new { @class = "text-danger" })
                                                     </div>
 
 
                                                     <div class="col-sm-6">
                                                         <input type="text" class="form-control form-control-user" placeholder="Briones"
                                                                name="Apellido" value="@Model.Apellido">
-                                                        @Html.ValidationMessageFor(Model => Model.Apellido)
+                                                        @Html.ValidationMessageFor(Model => Model.Apellido, null, new { @class = "text-danger" })
                                                     </div>
 
                                                 </div>
@@ -74,7 +74,7 @@
 
                                                         <input type="text" class="form-control form-control-user" placeholder="Odontologo"
                                                                name="Cargo" value="@Model.Cargo">
-                                                        @Html.ValidationMessageFor(Model => Model.Cargo)
+                                                        @Html.ValidationMessageFor(Model => Model.Cargo, null, new { @class = "text-danger" })
                                                     </div>
 
                                                 </div>
@@ -83,7 +83,7 @@
 
                                                         <input type="text" class="form-control form-control-user" placeholder="700.000"
                                                                name="Monto" value="@Model.Monto">
-                                                        @Html.ValidationMessageFor(Model => Model.Monto)
+                                                        @Html.ValidationMessageFor(Model => Model.Monto, null, new { @class = "text-danger" })
                                                     </div>
 
                                                 </div>
