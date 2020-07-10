@@ -36,7 +36,7 @@ namespace Clinica.Models
 
 
          [Required]
-         [StringLength(25, MinimumLength = 5)]
+        [StringLength(25, MinimumLength = 5)]
         public String Valor { get; set; }
 
         [StringLength(25, MinimumLength = 5)]

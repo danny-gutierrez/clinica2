@@ -32,7 +32,7 @@ namespace Clinica.Controllers
             if (ModelState.IsValid)
             {
                 //guarda en bd
-                return RedirectToAction("View", "Tratamientos", new { id = 1 });
+                return RedirectToAction("Index", "Tratamientos", new { id = 1 });
             }
 
             return View(tratamiento);

@@ -47,7 +47,7 @@ namespace Clinica.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Edit", "Boletas", new { id = 1 });
+                return RedirectToAction("View", "Boletas", new { id = 1 });
             }
             return View(boleta);
         }

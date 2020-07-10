@@ -34,7 +34,7 @@ namespace Clinica.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("View", "Pacientes", new { id = 1 });
+                return RedirectToAction("Index", "Pacientes", new { id = 1 });
             }
             return View(paciente);
         }
@@ -66,7 +66,7 @@ namespace Clinica.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Edit", "Pacientes", new { id = 1 });
+                return RedirectToAction("View", "Pacientes", new { id = 1 });
             }
             return View(paciente);
         }

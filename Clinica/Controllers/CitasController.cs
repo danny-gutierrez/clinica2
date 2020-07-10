@@ -52,7 +52,7 @@ namespace Clinica.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Edit", "Citas", new { id = 1 });
+                return RedirectToAction("View", "Citas", new { id = 1 });
             }
             return View(cita);
         }
